@@ -1,0 +1,141 @@
+:root {
+    --fuenteUno: 'Montserrat', sans-serif;
+    --fuenteDos: 'Fraunces', serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.contenedor {
+    width: 95%;
+    margin: 15rem auto;
+    background: hsl(30, 38%, 92%);
+}
+
+.tarjeta {
+    width: 40%;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.tarjeta_detalle {
+    flex-basis: 50%;
+    background: hsl(0, 0%, 100%);
+    padding: 2rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.detalle_img {
+    padding: 0;
+    flex-basis: 50%;
+}
+
+.detalle_img img {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.titulo_perfume {
+    font-size: 1.4rem;
+    color: rgb(129, 129, 151);
+    font-family: var(--fuenteUno);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+}
+
+.fuente_principal {
+    font-size: 3rem;
+    color: rgb(5, 5, 10);
+    font-family: var(--fuenteDos);
+}
+
+.main,
+p {
+    font-size: 1.4rem;
+    color: rgb(129, 129, 151);
+    font-family: var(--fuenteUno);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+}
+
+.uno {
+    font-size: 3rem;
+    color: hsl(167, 47%, 35%);
+    font-family: var(--fuenteDos);
+}
+
+.dos {
+    text-decoration: line-through;
+    margin: 2rem;
+}
+
+.carrito {
+    background: hsl(167, 47%, 35%);
+    width: 90%;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 1rem;
+    color: #FFFFFF;
+    font-family: var(--fuenteUno);
+    border-radius: 10%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+    .tarjeta {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    .tarjeta {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tarjeta {
+        width: 90%;
+        display: flex;
+        margin: 0 auto;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}
